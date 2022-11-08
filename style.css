@@ -7,10 +7,14 @@
 body {
   font-family: sans-serif;
   font-size: 16px;
+  
 }
 nav {
-  background: rgba(0, 0, 0, 0.255);
-  padding: 0 15px;
+  padding: 0 25px;
+  font-family: "Sofia", sans-serif;
+  font-size: 14px;
+  padding-bottom: 30px;
+  position: relative;
 }
 a {
   color: white;
@@ -19,20 +23,23 @@ a {
 .menu,
 .submenu {   
   list-style-type: none;
+  color: #111;
 }
 .logo {
-  font-size: 20px;
+  font-size: 22px;
   padding: 7.5px 10px 7.5px 0;
+  font-style: bold;
 }
 .item {
   padding: 10px;
+  color: antiquewhite;
 }
 .item.button {
   padding: 9px 5px;
 }
 .item:not(.button) a:hover,
 .item a:hover::after {
-  color: #ccc;
+  color: darkblue; 
 }
 
 /* Mobile menu */
@@ -45,6 +52,7 @@ a {
 .menu li a {
   display: block;
   padding: 15px 5px;
+  color: #111;
 }
 .menu li.subitem a {
   padding: 15px;
@@ -61,6 +69,7 @@ a {
   width: 100%;
   text-align: center;
   display: none;
+  color: antiquewhite;
 }
 .active .item {
   display: block;
@@ -73,6 +82,8 @@ a {
 /* Submenu up from mobile screens */
 .submenu {
   display: none;
+  background-color: #0080ff;
+  color: antiquewhite;
 }
 .submenu-active .submenu {
  display: block;
@@ -86,14 +97,15 @@ a {
   line-height: 16px;
   font-weight: 900; 
   content: "\f078";
-  color: white;
+  color: rgb(0, 0, 0);
   padding-left: 5px;
+  
 }
 .subitem a {
   padding: 10px 15px;
 }
 .submenu-active {
-  background-color: #111;
+  background-color: rgb(255, 255, 255);
   border-radius: 3px;
 }
 
@@ -136,7 +148,7 @@ a {
   }
   .button:not(.secondary) a:hover {
       background: royalblue;
-      border-color: darkblue;
+      border-color: white;
   }
 }
 
@@ -165,7 +177,6 @@ a {
       position: absolute;
       left: 0;
       top: 68px;
-      background: #111;
   }
   .toggle {
       display: none;
@@ -174,3 +185,119 @@ a {
       border-radius: 0;
   }
 }
+
+.img{
+  background-image: url(bbb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+
+.wrapper {
+  margin: auto;
+  width: 60%;
+  padding: 200px;
+}
+.wrapper .search_box{
+  width: 500px;
+  background: #fff;
+  border-radius: 5px;
+  height: 65px;
+  display: flex;
+  padding: 10px;
+  box-shadow: 0 8px 6px -10px #b3c6ff;
+}
+
+.wrapper .search_box .dropdown{
+  width: 150px;
+  border-right: 2px solid #dde2f1;
+  color: #9fa3b1;
+  position: relative;
+  cursor: pointer;
+}
+
+.wrapper .search_box .dropdown .default_option{
+  text-transform: uppercase;
+  padding: 13px 15px;
+  font-size: 14px;
+}
+
+.wrapper .search_box .dropdown ul{
+  position: absolute;
+  top: 70px;
+  left: -10px;
+  background: #fff;
+  width: 150px;
+  border-radius: 5px;
+  padding: 20px;
+  display: none;
+  box-shadow: 8px 8px 6px -10px #b3c6ff;
+}
+
+.wrapper .search_box .dropdown ul.active{
+  display: block;
+}
+
+.wrapper .search_box .dropdown ul li{
+  padding-bottom: 20px;
+}
+
+.wrapper .search_box .dropdown ul li:last-child{
+  padding-bottom: 0;
+}
+
+.wrapper .search_box .dropdown ul li:hover{
+  color: #6f768d;
+}
+
+.wrapper .search_box .dropdown:before{
+  content: "";
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  border: 8px solid;
+  border-color: #5078ef transparent transparent transparent;
+}
+
+.wrapper .search_box .search_field{
+  width: 350px;
+  height: 100%;
+  position: relative;
+}
+
+.wrapper .search_box .search_field .input{
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 38px;
+  color: #6f768d;
+}
+
+.wrapper .search_box .search_field .fas{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  color: #5078ef;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #9fa3b1;
+}
+::-moz-placeholder { /* Firefox 19+ */
+ color: #9fa3b1;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #9fa3b1;
+}
+
