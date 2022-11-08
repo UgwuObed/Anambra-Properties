@@ -12,6 +12,7 @@
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.ico"/>
     <!-- Customized Bootstrap Stylesheet -->
     <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
    <!-- <link rel="stylesheet" href="style.scss" /> -->
 </head>  
 <body>
@@ -21,50 +22,38 @@
           <a href="#!">Logo</a>
         </div>
         <nav>
-          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-          <ul class="nav-list">
-            <li>
-              <a href="#!">Home</a>
+          <ul class="menu">
+              <li class="logo"><a href="#">Creative Mind Agency</a></li>
+              <li class="item"><a href="#">Home</a></li>
+              <li class="item"><a href="#">About</a></li>
+              <li class="item has-submenu">
+                  <a tabindex="0">Buy</a>
+                  <ul class="submenu">
+                      <li class="subitem"><a href="#">Land</a></li>
+                      <li class="subitem"><a href="#">House</a></li>
+                  </ul>
+              </li>
+              <li class="item has-submenu">
+                  <a tabindex="0">Sell</a>
+                  <ul class="submenu">
+                    <li class="subitem"><a href="#">Land</a></li>
+                    <li class="subitem"><a href="#">House</a></li>
+                  </ul>
+              </li>
+              <li class="item has-submenu">
+                <a tabindex="0">Rent</a>
+                <ul class="submenu">
+                  <li class="subitem"><a href="#">Land</a></li>
+                  <li class="subitem"><a href="#">House</a></li>
+                </ul>
             </li>
-            <li>
-              <a href="#!">About</a>
-            </li>
-            <li>
-              <a href="#!">Services</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="#!">Web Design</a>
-                </li>
-                <li>
-                  <a href="#!">Web Development</a>
-                </li>
-                <li>
-                  <a href="#!">Graphic Design</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#!">Pricing</a>
-            </li>
-            <li>
-              <a href="#!">Portfolio</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="#!">Web Design</a>
-                </li>
-                <li>
-                  <a href="#!">Web Development</a>
-                </li>
-                <li>
-                  <a href="#!">Graphic Design</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#!">Contact</a>
-            </li>
+              <li class="item"><a href="#">Rent Hotels</a></li>
+              <li class="item"><a href="#">Hotels</a></li>
+              <li class="item"><a href="#">Proccess Documents</a></li>
+              <li class="item"><a href="#">Become Agent</a></li>
+              <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
           </ul>
-        </nav>
+      </nav>
       </div>
     </section>
 
@@ -72,5 +61,5 @@
 
 
 
-    <script src="nav.js"></script> 
+    <script src="script.js"></script> 
 </body>  
