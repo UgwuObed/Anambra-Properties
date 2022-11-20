@@ -966,6 +966,7 @@ a:focus {
   margin-right:0px;
   margin-bottom:0px;
   margin-left:0px;
+  padding-left: 12px;
   line-height:25px;
 }
 .responsive-cell-block{
@@ -987,7 +988,7 @@ a:focus {
   padding-top:10px;
   padding-right:50px;
   padding-bottom:10px;
-  padding-left:50px;
+  padding-left:70px;
   background-color:rgb(244, 252, 255);
 }
 .inner-container{
@@ -1011,11 +1012,11 @@ a:focus {
   margin:0 0 10px 0;
 }
 .section-subhead-text{
-  font-size:25px;
-  color:rgb(153, 153, 153);
-  line-height:35px;
+  font-size: 19px;
+  color: black;
+  line-height: 29px;
   max-width:470px;
-  text-align:center;
+  text-align: left;
   margin-top:0px;
   margin-right:0px;
   margin-bottom:60px;
@@ -1027,7 +1028,9 @@ a:focus {
 .team-card{
   display:flex;
   flex-direction:column;
-  align-items:center;
+  align-items: left;
+  padding-right: 29px;
+  justify-content: space-between;
 }
 .social-media-links{
   width:125px;
@@ -1035,17 +1038,20 @@ a:focus {
   justify-content:space-between;
 }
 .name{
-  font-size:25px;
-  font-weight:700;
-  color:rgb(102, 102, 102);
+  font-size: 14px;
+  font-weight:600;
+  color: black;
+  text-align: justify;
+  justify-content:space-between;
+  padding-left: 20px;
+  padding-right: 29px;
   margin-top:0px;
   margin-right:0px;
-  margin-bottom:5px;
   margin-left:0px;
 }
 .position{
-  font-size:25px;
-  font-weight:700;
+  font-size: 13px;
+  font-weight:500;
   color:rgb(0, 135, 177);
   margin-top:0px;
   margin-right:0px;
@@ -1061,11 +1067,11 @@ a:focus {
   margin:0 0 40px 0;
 }
 @media (max-width: 500px){
-  .outer-container{
-    padding:10px 20px 10px 20px;
+ 
   }
   .section-head-text{
     text-align:center;
+    font-size: 17px;
   }
 } 
 
@@ -1078,10 +1084,6 @@ a:focus {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-body {
-  margin: 0;
 }
 
 .wk-desk-1{
