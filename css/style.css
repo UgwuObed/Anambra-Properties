@@ -1239,8 +1239,61 @@ a:focus {
     width: 100%;
   }
 }
-
-p .bagent{
-  font-size: larger;
-  color: #3554d1;
+.formContainer {
+  position: relative;
+  margin: 8% auto;
+  min-height: 60%;
+  width: 50%;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.6);
+  background-color: #0f2480;
+  background: #0f2480;
+  padding: 0px 0px 5px 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
+}.formHeader {
+  text-align: center;
+}.formContentContainer {
+  margin-top: 15%;
+}.formInput {
+  display: block;
+  margin: 0px 0px 15px 20px;
+  padding: 4px;
+  width: 80%;
+  height: 5%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #aaa;
+  font-size: 12px;
+}.submitButton {
+  background: dodgerblue;
+  color: white;
+  margin: 10px 20px;
+  width: 80%;
+  height: 8%;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 500;
 }
+.dob{
+  color: #f1f1f1;
+  font-size: smaller;
+}
+.opt{
+  font-size: small;
+}
+
+  ::-webkit-input-placeholder {
+    font-style: italic;
+ }
+ :-moz-placeholder {
+    font-style: italic;  
+ }
+ ::-moz-placeholder {
+    font-style: italic;  
+ }
+ :-ms-input-placeholder {  
+    font-style: italic; 
+ }
