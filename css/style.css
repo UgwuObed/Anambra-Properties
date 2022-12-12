@@ -1297,3 +1297,8 @@ a:focus {
  :-ms-input-placeholder {  
     font-style: italic; 
  }
+.h1logo{
+  color: #f97616;
+  font-weight: bolder;
+  font-size: larger;
+}
